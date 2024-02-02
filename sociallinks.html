@@ -23,7 +23,10 @@
     text-align: center;
     color: white;
 }
-     
+     .dark-mode {
+  background-image: linear-gradient(0deg, rgba(1,38,149,1) 0%, rgba(0,0,0,1) 100%);
+  color: white;
+   } 
 .buttonClass {
   font-size:30px;
   width:190px;
@@ -52,7 +55,19 @@
    </style>
  
 </head>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+  
  <!--This is all the website text, buttons and other elements go:-->
+  <div align="right">
+  <a style="font-family: 'Montserrat'"; class="buttonClass button1"  onclick="myFunction()"> Dark Mode</a>
+</div>
+  
 <body>
   <header>
     <h1 style=";font-family: 'Honk', system-ui;font-size: 50px;text-align: center;font-weight:400;"><b>My Socials:</b></h1>
